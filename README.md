@@ -25,6 +25,10 @@ conda activate prnet
 
 python main.py --exp_name=exp1
 
+The above didn't work on ava due to memory issues, however this worked:
+
+    python main.py --exp_name=exp1 --batch_size 6 --test_batch_size 4
+
 ### exp2 modelnet40 unseen
 
 python main.py --exp_name=exp2 --unseen=True
